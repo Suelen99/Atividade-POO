@@ -1,0 +1,40 @@
+package calculoresistencia;
+
+import java.util.Scanner;
+
+public class ResistenciaParalela{
+   public static void main(String args []){
+     double r1, r2, r3;
+
+     Scanner ler = new Scanner(System.in);
+
+     System.out.printf("Digite o valor de r1: ");
+     r1 = ler.nextDouble();
+
+     System.out.printf("Digite o valor de r2: ");
+     r2 = ler.nextDouble();
+
+     System.out.printf("Digite o valor de r3: ");
+     r3 = ler.nextDouble();
+
+     System.out.printf("Digite 1  para série ou 2 para paralela: ");
+     String opcao = ler.next();
+     double resistencia;
+
+     switch (opcao){
+     case"1": {
+          resistencia = r1+r2+r3;
+          break;
+     }
+     case"2":{
+          resistencia = (1/r1)+(1/r2)+(1/r3);
+          break
+     }
+     default:{
+          System.out.println("OPÇAO INVÁLIDA");
+          resistencia = 0;
+     }
+}
+     System.out.println("Resistencia total é igual  a: ") + resistencia);
+     }
+}
