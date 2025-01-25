@@ -1,0 +1,24 @@
+package informacoestrabalho;
+
+impot java.util.Scanner;
+
+public class InformacoesDeTrabalho{
+  public static void main(String args []){
+     double salario_fixo, total_vendas, total;
+
+     Scanner ler = new Scanner (System.in);
+
+     System.out.println("Digite o nome do vendedor: ");
+     String vendedor = ler.next();
+
+     System.out.println("Digite o salario fixo: ");
+     salario_fixo = ler.nextDouble();
+
+     System.out.println("Digite o total de vendas efetuadas: ");
+     total_vendas = ler.nextDouble();
+
+     total = (total_vendas * 0.15) + salario_fixo;
+     System.out.printf("TOTAL = R$%.2f", total);
+     }
+}
+
