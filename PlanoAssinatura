@@ -1,0 +1,65 @@
+public class Usuario{
+   String nome;
+   String email;
+   String senha;
+
+   Usuario(String nome, String email, String senha){
+      this.nome = nome;
+      this.email = email;
+      this.senha = senha;
+   }
+   public void assistirFilme(){
+   }
+}
+
+public class Filme{
+    String titulo;
+    String diretor;
+    int ano;
+    String genero;
+    int duracao;
+    String [] elenco;
+
+    Filme(String titulo, String diretor, int ano, String genero, int duracao, String [] elenco){
+       this.titulo = titulo;
+       this.diretor = diretor;
+       this.ano = ano;
+       this.genero = genero;
+       this.duracao = duracao;
+       this.elenco = elenco;
+    }
+    public void exibirInformcoes(){
+    }
+}
+
+public class Assinatura{
+   String tipo;
+   String descricao;
+   double preco;
+   Filme [] listaFilme;
+
+   Assinatura(String tipo, String descricao, double preco, Filme [] listaFilme){
+      this.tipo = tipo;
+      this.descricao = descricao;
+      this.preco = preco;
+      this.listaFilme = listaFilme;
+   }
+   public void assistirInformacoes(){
+   }
+}
+
+public class Plano{
+   String nome;
+   String declaracao;
+   Usuario usuario;
+   Assisnatura [] assinaturasDisponiveis;
+
+   Plano(String nome, String declaracao, Usuario usuario, Assisnatura [] assinaturasDisponiveis){
+      this.nome = nome;
+      this.declaracao = declaracao;
+      this.usuario = usuario;
+      this.assinaturasDisponiveis = assinaturasDisponiveis;
+  }
+  public void assistirInformacoes(){
+  }
+}
