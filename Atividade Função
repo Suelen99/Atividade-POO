@@ -1,4 +1,4 @@
-package funcao
+package funcao;
 
 import java.util.Scanner;
 
